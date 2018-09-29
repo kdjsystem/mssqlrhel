@@ -20,7 +20,7 @@ LABEL name="microsoft/mssql-server-linux" \
 #    ACCEPT_EULA=Y yum install --disablerepo "*" --enablerepo ${REPOLIST} --setopt=tsflags=nodocs -y mssql-server  msodbcsql  mssql-tools && \
 #    yum clean all
 
-ENV PATH=${PATH}:/opt/mssql/bin:/opt/mssql-tools/bin
+env PATH=${PATH}:/opt/mssql/bin:/opt/mssql-tools/bin
 
 # Default SQL Server TCP/Port
 EXPOSE 1433
